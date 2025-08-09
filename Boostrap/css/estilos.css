@@ -1,0 +1,42 @@
+body{
+    background: #f2f2f2;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+header{
+    background: #8c60fc;
+    padding: 20px;
+    margin: 20px;
+}
+
+.contenedor-main{
+    margin-bottom: 20px;
+}
+
+main{
+    background: #fff;
+    color: #424242;
+    padding: 20px 0;
+}
+
+aside{
+    background: #dee5e8;
+    padding: 60px 0;
+    color: #5755e0;
+    text-align: center;
+}
+
+.widgets{
+    margin-bottom: 20px;
+}
+.widgets > div{
+   background: #559de0;
+   color: #fff;
+   padding: 20px;
+}
+
+footer{
+    padding: 20px 0;
+    background: #1e1e1e;
+}

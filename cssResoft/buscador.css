@@ -1,0 +1,110 @@
+/* ---------- CSS BUSCADOR PRINCIPAL ---------- */
+.buscador-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#entrada-busqueda {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+/* ---------- MODAL BUSCAR LUPA ---------- */
+.icono-lupa {
+  font-size: 18px;
+  cursor: pointer;
+}
+.modal-busqueda {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(5, 5, 5, 0.329);
+}
+.modal-contenido {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 100px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 7px 7px 7px rgba(39, 39, 39, 0.644);
+}
+.cerrar-modal {
+  color: rgb(116, 2, 247);
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cerrar-modal:hover {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+/* ---------- ACCESIBILIDAD ---------- */
+.oculto {
+  display: none;
+}
+#contraste {
+  background-color: gold;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  display: block;
+  margin: 5px;
+  padding: 4px 12px;
+}
+#aumentar {
+  background-color: #0011ff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  display: block;
+  margin: 5px;
+  padding: 4px 12px;
+}
+#restablecer {
+  background-color: #eee;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  display: block;
+  margin: 5px;
+  padding: 4px 12px;
+}
+
+
+/* ---------- RESPONSIVO ---------- */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  nav.nav-principal {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .dropdown-mega .mega-menu .column {
+    display: none;
+  }
+
+  .buscador-container {
+    display: none;
+  }
+
+  .modal-busqueda {
+    display: none;
+  }
+}/*Fin de Responsivo para dispositivos */
