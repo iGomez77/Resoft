@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resoft - Carrito de Compras</title>
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="/Boostrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/cssResoft/index.css" />
+  <link rel="stylesheet" href="/cssResoft/buscador.css" />
+  <link rel="stylesheet" href="/cssResoft/carritoCompras.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  
+    <section id="carrito" class="container mt-5 mb-5">
+      <h2 class="text-center mb-4">Carrito de Compras</h2>
+
+      <!-- Tabla del carrito -->
+      <div class="table-responsive">
+        
+       <table class="table table-bordered text-center align-middle tabla-carrito">
+       <thead class="table-light">
+       <tr>
+          <th scope="col"></th>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Subtotal</th>
+          <th scope="col">Acción</th>
+        </tr>
+
+         <tbody id="carritoBody">
+            <!-- Las filas del carrito se insertarán aquí -->
+        </tbody>
+
+        </thead>
+
+      </table>
+      </div>
+
+     
+
+      <!-- Formulario de envío -->
+      <div class="formulario-envio mt-4">
+        <h4>Datos de Entrega</h4>
+        <p>Ingrese los datos para mostrar opciones de envío disponibles.</p>
+        <input type="text" class="form-control my-2" placeholder="Departamento" aria-label="Departamento">
+        <input type="text" class="form-control my-2" placeholder="Municipio" aria-label="Municipio">
+        <input type="text" class="form-control my-2" placeholder="¿Tienes un código de promoción?" aria-label="Código de promoción">
+      </div>
+
+      <!-- Resumen de compra -->
+      <div class="resumen-compra mt-4">
+        <p class="fs-5"><strong>Subtotal:</strong> <span id="subtotal" class="text-success">$0</span></p>
+        <p class="fs-5"><strong>Envío:</strong> <span id="envio" class="text-primary">$0</span></p>
+        <p class="fs-4"><strong>Total:</strong> <span id="total" class="text-dark">$0</span></p>
+      </div>
+
+
+      <!-- Navegación de acciones -->
+      <div class="text-center my-4">
+      
+        <a href="#" data-page="/htmlResoft/pagos.html" class="btn btn-success me-3">
+          <i class="fas fa-credit-card"></i> Ir a pagar
+        </a>
+        <button id="vaciarCarrito" class="btn btn-outline-danger">
+          <i class="fas fa-trash-alt"></i> Vaciar carrito
+        </button>
+      </div>
+
+    </section>
+
+
+
+<!-- JS -->
+<script src="/javaResoft/carritoCompras.js"></script>
+<script src="/Boostrap/js/bootstrap.bundle.js"></script>
+<script src="/javaResoft/index.js" ></script>
+
+
+</body>
+</html>

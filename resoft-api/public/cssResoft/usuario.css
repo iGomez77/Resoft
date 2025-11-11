@@ -1,0 +1,105 @@
+
+/* ---------- ESTILOS GENERALES ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-family: HelveticaNowText, Helvetica, Arial, sans-serif;
+}
+
+/* ----------CENTRADO DE CONTENIDO CARGADO ---------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5px;
+}
+
+
+/* ----------OPCION DE TARJETA---------- */
+.login-form-container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(92, 92, 92, 0.418); /* sombra morada suave */
+}
+
+/* ----------CSS FORMULARIO ---------- */
+form label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #8400ff;
+}
+
+/* ----------BOTONES ---------- */
+.btn {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #5900ff;
+  border: none;
+}
+
+.btn-dark {
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+}
+
+
+/* ----------CSS FOOTER---------- */
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #666;
+  position: relative;
+}
+
+
+/* ----------RESPONSIVO ---------- */
+@media screen and (max-device-width: 767px) and (orientation: portrait){
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn-morado,
+  .btn-negro {
+    width: 100%;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+

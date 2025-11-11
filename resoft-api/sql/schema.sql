@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS resoft_db;
+USE resoft_db;
+CREATE TABLE IF NOT EXISTS productos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  descripcion TEXT,
+  precio DECIMAL(10,2) NOT NULL,
+  stock INT DEFAULT 0
+);

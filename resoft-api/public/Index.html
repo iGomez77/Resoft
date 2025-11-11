@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resoft - Inicio</title>
+
+ 
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Boostrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/cssResoft/index.css" />
+  <link rel="stylesheet" href="/cssResoft/buscador.css" />
+  <link rel="stylesheet" href="/cssResoft/catalogo.css" />
+  <link rel="stylesheet" href="/cssResoft/carritoCompras.css" />
+
+  <!-- Iconos accesibles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./Boostrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <!-- ENCABEZADO PRINCIPAL-->
+  <header role="banner">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <h1 class="logo"><a href="./Index.html">Resoft</a></h1>
+
+      <!-- Navegación principal (Escritorio) -->
+      
+<nav class="nav-principal" role="navigation" aria-label="Menú principal">
+
+  <!-- Novedades -->
+  <div class="dropdown-mega">
+    <a href="#" data-page="catalogo.html?categoria=Novedades">Novedades</a>
+    <div class="mega-menu" role="menu">
+      <section class="column">
+        <h6 class="titulo-novedades">Novedades</h6>
+        <a href="#" data-page="catalogo.html?categoria=Hombre">Hombre</a>
+        <a href="#" data-page="catalogo.html?categoria=Mujer">Mujer</a>
+        <a href="#" data-page="catalogo.html?categoria=Niños">Niños</a>
+      </section>
+      <section class="column">
+        <h6 class="titulo-deportes">Deportes</h6>
+        <a href="#" data-page="catalogo.html?categoria=Fútbol">Fútbol</a>
+        <a href="#" data-page="catalogo.html?categoria=Correr">Correr</a>
+        <a href="#" data-page="catalogo.html?categoria=Gym">Gym</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Hombre -->
+  <div class="dropdown-mega">
+    <a href="#" data-page="catalogo.html?categoria=Hombre">Hombre</a>
+    <div class="mega-menu" role="menu">
+      <section class="column">
+        <h6 class="titulo-disciplina">Disciplina</h6>
+        <a href="#" data-page="catalogo.html?categoria=Fútbol">Fútbol</a>
+        <a href="#" data-page="catalogo.html?categoria=Correr">Correr</a>
+        <a href="#" data-page="catalogo.html?categoria=Gym">Gym</a>
+      </section>
+      <section class="column">
+        <h6 class="titulo-ropa">Ropa</h6>
+        <a href="#" data-page="catalogo.html?categoria=Sudaderas">Sudaderas</a>
+        <a href="#" data-page="catalogo.html?categoria=Lycra">Lycra</a>
+        <a href="#" data-page="catalogo.html?categoria=Body">Body</a>
+      </section>
+      <section class="column">
+        <h6 class="titulo-futbol">Fútbol</h6>
+        <a href="#" data-page="catalogo.html?categoria=Guayos">Guayos</a>
+        <a href="#" data-page="catalogo.html?categoria=Torretin">Torretin</a>
+        <a href="#" data-page="catalogo.html?categoria=Runner">Runner</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Mujer -->
+  <div class="dropdown-mega">
+    <a href="#" data-page="catalogo.html?categoria=Mujer">Mujer</a>
+    <div class="mega-menu">
+      <section class="column">
+        <h6 class="titulo-disciplina">Disciplina</h6>
+        <a href="#" data-page="catalogo.html?categoria=Correr">Correr</a>
+        <a href="#" data-page="catalogo.html?categoria=Gym">Gym</a>
+        <a href="#" data-page="catalogo.html?categoria=Libre">Libre</a>
+      </section>
+      <section class="column">
+        <h6 class="titulo-ropa">Ropa</h6>
+        <a href="#" data-page="catalogo.html?categoria=Leggings">Leggings</a>
+        <a href="#" data-page="catalogo.html?categoria=Tops">Tops</a>
+        <a href="#" data-page="catalogo.html?categoria=Short">Short</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Niños -->
+  <div class="dropdown-mega">
+    <a href="#" data-page="catalogo.html?categoria=Niños">Niños</a>
+    <div class="mega-menu">
+      <section class="column">
+        <h6 class="titulo-niños">Por edad</h6>
+        <a href="#" data-page="catalogo.html?categoria=Bebés">Bebés (0-3)</a>
+        <a href="#" data-page="catalogo.html?categoria=Niños3a5">Niños (3-5)</a>
+        <a href="#" data-page="catalogo.html?categoria=Niños7a10">Niños (7-10)</a>
+      </section>
+      <section class="column">
+        <h6 class="titulo-niños">Ropa</h6>
+        <a href="#" data-page="catalogo.html?categoria=Pijamas">Pijamas</a>
+        <a href="#" data-page="catalogo.html?categoria=Jogger">Jogger</a>
+        <a href="#" data-page="catalogo.html?categoria=Bodys">Bodys</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Descuentos -->
+  <div class="dropdown-mega">
+    <a href="#" data-page="catalogo.html?categoria=Ofertas">Descuentos</a>
+    <div class="mega-menu">
+      <section class="column ">
+        <h6 class="titulo-descuentos">Ofertas</h6>
+        <a href="#" data-page="catalogo.html?categoria=Sale40">Sale 40%</a>
+        <a href="#" data-page="catalogo.html?categoria=Sale50">Sale 50%</a>
+        <a href="#" data-page="catalogo.html?categoria=Sale65">Sale 65%</a>
+      </section>
+    </div>
+  </div>
+  
+</nav>
+
+<!-- MENÚ HAMBURGUESA (Móvil) -->
+<button id="btn-menu" class="btn-menu" aria-label="Abrir menú">☰</button>
+
+<!-- MENÚ LATERAL MODERNO -->
+<nav id="menuLateral" class="menu-lateral" aria-hidden="true">
+  <button id="cerrarMenu" class="cerrar" aria-label="Cerrar menú">✖</button>
+  <ul>
+    <li><a href="./Index.html">Inicio</a></li>
+    <li><a href="#" data-page="catalogo.html?categoria=Novedades">Novedades</a></li>
+    <li><a href="#" data-page="catalogo.html?categoria=Hombre">Hombre</a></li>
+    <li><a href="#" data-page="catalogo.html?categoria=Mujer">Mujer</a></li>
+    <li><a href="#" data-page="catalogo.html?categoria=Niños">Niños</a></li>
+    <li><a href="#" data-page="catalogo.html?categoria=Ofertas">Descuentos</a></li>
+  </ul>
+</nav>
+
+
+      <!-- Buscador -->
+      <section class="nav-buscador">
+          
+          <div class="buscador-container">
+            <input type="text" id="entrada-busqueda" placeholder="Buscar" readonly onclick="abrirModal()" />
+            <span class="icono-lupa" onclick="abrirModal()">🔍</span>
+          </div>
+        
+          <!-- Modal de búsqueda lupa e inputBusqueda-->
+          <div id="modalBusqueda" class="modal-busqueda">
+            <div class="modal-contenido">
+              <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+              <h4>Buscar productos</h4>
+              <input type="text" id="inputBusqueda" placeholder="Escribe el nombre del producto..." class="form-control mb-2" />
+              <button class="btn btn-primary" onclick="buscarProducto()">Buscar</button>
+            </div>
+          </div>
+      </section>
+
+    
+
+    <div class="logo"></div>
+    <div id="menu-usuario"></div>
+
+  </header>
+
+
+
+
+  <!-- MENÚ DERECHO/ACCESIBILIDAD -->
+  <nav class="menu-derecha" role="navigation" aria-label="Accesos rápidos">
+    <a href="#" data-page="/htmlResoft/catalogo.html" title="Tienda"><i class="fas fa-bag-shopping"></i></a>
+    <a href="#" data-page="/htmlResoft/usuarios.html" title="Perfil de usuario" aria-label="Perfil de usuario">
+      <i class="fas fa-user"></i>
+    </a>
+   <a href="#" data-page="/htmlResoft/carritoCompras.html" title="Carrito">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="contador-carrito"
+        style="display:none;
+               background:red;
+               color:white;
+               font-size:0.8rem;
+               border-radius:50%;
+               padding:2px 6px;
+               position:relative;
+               top:-10px;
+               right:-5px;">
+  </span>
+</a>
+
+
+
+    <a href="#accesibilidad" id="btn-accesibilidad"  aria-label="Opciones de accesibilidad">
+      <i class="fas fa-universal-access"></i>
+      <div id="opciones-accesibilidad" class="oculto bg-black mb-5 w-100 p-2 align-items-center">
+        <button id="contraste">Contraste</button>
+        <button id="aumentar">Aumentar texto</button>
+        <button id="restablecer">Restablecer</button>
+      </div>
+    </a>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="contenido" class="container" role="main" tabindex="-1">
+    
+    <!-- IMAGEN CUBO RUBIK PRINCIPAL-->
+    <img src="../img/rubik.webp" width="400px"  class="rounded mx-auto d-block">
+  </main>
+  <!-- RELOJ-->
+  <div class="reloj" id="reloj">12:00:00</div>
+
+  <!-- PIE DE PÁGINA RESOFT -->
+<footer class="bg-none text-dark pt-5 pb-5" role="contentinfo"><hr>
+  <div class="container">
+    <div class="row">
+
+      <!-- AYUDA -->
+      <div class="col-6 col-md-3 mb-4">
+        <h6 class="fw-bold">Ayuda</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Artículos y tallas</a></li>
+          <li><a href="#">Opciones de regalo</a></li>
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Pagos y facturas</a></li>
+          <li><a href="#">Devoluciones</a></li>
+        </ul>
+      </div>
+
+      <!-- SIGUENOS -->
+      <div class="col-6 col-md-3 mb-4">
+        <h6 class="fw-bold">Síguenos</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Whatsapp</a></li>
+        </ul>
+      </div>
+
+      <!-- EMPRESA -->
+      <div class="col-6 col-md-3 mb-4">
+        <h6 class="fw-bold">Empresa</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Oficinas</a></li>
+          <li><a href="#">Tienda física</a></li>
+        </ul>
+      </div>
+
+      <!-- POLITICAS -->
+      <div class="col-6 col-md-3 mb-4">
+        <h6 class="fw-bold">Políticas</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Condiciones de compra</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Configuración de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- INFORMACION LEGAL -->
+    <div class="text-center small text-muted">
+      &copy; 2025 Resoft S.A.S | NIT 900.000.000-1 | Bogotá, Colombia |
+      Todos los derechos reservados.
+      <br />
+      <a href="#">Términos de uso</a> · 
+      <a href="#">Política de privacidad</a> · 
+      <a href="#">Política de cookies</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS -->
+<script src="/Boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="/javaResoft/carritoCompras.js"></script>
+<script src="/javaResoft/index.js"></script>
+<script src="/javaResoft/usuarios.js"></script>
+  
+</body>
+</html>

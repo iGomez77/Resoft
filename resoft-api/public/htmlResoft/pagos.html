@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resoft - Métodos de Pago</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/Boostrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/cssResoft/pagos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+</head>
+
+<body>
+    <!-- CONTENIDO DE OPCIONES PRINCIPAL-->
+  <main class="container py-5">
+    <a href="./carritoCompras.html" data-page="../htmlResoft/carritoCompras.html" class="btn btn-black text-decoration-none" aria-label="Volver al carrito"> Atras</a>
+  <!-- SECCION OPCIONES DE PAGOS-->
+    <section class="contenedor-pago text-center">
+      <h1 class="mb-4">Ya casi es tuyo</h1>
+      <p class="subtitulo mb-5">Elige un método de pago</p>
+
+      <div class="row justify-content-center gap-3 metodos-pago" role="group" aria-label="Métodos de pago">
+        <!-- TARJETAS -->
+        <button class="opcion col-md-3 btn  d-flex flex-column align-items-center p-3"
+                onclick="seleccionarMetodo('Tarjeta')" aria-label="Pagar con tarjeta crédito o débito">
+          <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Ícono tarjeta" class="img-fluid" width="40">
+          <span class="mt-2">Tarjeta de crédito / débito</span>
+        </button>
+
+        <!-- PSE -->
+        <button class="opcion col-md-3 btn  d-flex flex-column align-items-center p-3"
+                onclick="seleccionarMetodo('PSE')" aria-label="Pagar con PSE en línea">
+          <img src="../img/pse.png" alt="Ícono PSE" class="img-fluid" width="40">
+          <span class="mt-2">PSE (seguro en línea)</span>
+        </button>
+
+        <!-- CONTRAENTREGAS -->
+        <button class="opcion col-md-3 btn  d-flex flex-column align-items-center p-3"
+                onclick="seleccionarMetodo('Contraentrega')" aria-label="Pagar contraentrega">
+          <img src="../img/contra-entregas.png" alt="Ícono contraentrega" class="img-fluid" width="40">
+          <span class="mt-2">Contraentrega</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Bootstrap JS -->
+  <script src="/Boostrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- para mostrar selección -->
+  <script>
+    function seleccionarMetodo(metodo) {
+      alert(`Has seleccionado el método de pago: ${metodo}`);
+    }
+  </script>
+</body>
+</html>

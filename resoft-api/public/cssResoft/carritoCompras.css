@@ -1,0 +1,108 @@
+/* ---------- ESTILOS GENERALES ---------- */
+
+.carrito {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.carrito h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* ---------- BOTON SEGUIR COMPRANDO ---------- */
+
+.volver, .seguir-comprando {
+  display: inline-block;
+  margin: 15px 0;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- ESTILOS TABLA LISTADO ---------- */
+
+.tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla-carrito thead {
+  background-color: #f5f5f5;
+}
+
+.tabla-carrito th, .tabla-carrito td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-carrito img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.producto-info {
+  display: flex;
+  align-items: center;
+}
+
+.btn-cantidad {
+  padding: 2px 8px;
+  margin: 0 5px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario-envio {
+  margin-top: 30px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.formulario-envio h4 {
+  margin-bottom: 5px;
+}
+
+.formulario-envio input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.resumen-compra {
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  padding-top: 30px;
+}
+
+.resumen-compra p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.resumen-compra span {
+  font-weight: bold;
+}
+
+.btn-siguiente {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#contador-carrito {
+  transition: opacity 0.3s ease;
+}
